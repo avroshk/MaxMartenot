@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 757.0, 619.0 ],
+		"rect" : [ 34.0, 79.0, 753.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -74,32 +74,6 @@
 					"patching_rect" : [ 680.0, 57.0, 47.0, 22.0 ],
 					"style" : "",
 					"text" : "adc~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-35",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 870.0, 594.0, 51.0, 22.0 ],
-					"style" : "",
-					"text" : "/ 32768"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-33",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 870.0, 556.0, 51.0, 22.0 ],
-					"style" : "",
-					"text" : "- 32768"
 				}
 
 			}
@@ -453,11 +427,12 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "" ],
-					"patching_rect" : [ 484.999969, 52.0, 79.0, 22.0 ],
+					"patching_rect" : [ 484.999969, 52.0, 85.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 18.653839, 110.0, 79.0, 22.0 ],
+					"presentation_linecount" : 2,
+					"presentation_rect" : [ 18.653839, 110.0, 79.0, 35.0 ],
 					"style" : "",
-					"text" : "serial c 9600"
+					"text" : "serial c 38400"
 				}
 
 			}
@@ -1798,15 +1773,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-33", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-27", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -1874,24 +1840,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-42", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-105", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-43", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-97", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-43", 0 ]
 				}
 
 			}
